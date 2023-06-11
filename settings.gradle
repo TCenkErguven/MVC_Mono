@@ -1,0 +1,4 @@
+rootProject.name = 'MVC_Mono'
+include 'For_Loop'
+include 'MVC_Mono_Crud'
+
