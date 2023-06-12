@@ -1,9 +1,16 @@
-  buildscript {
-    dependencies {
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
-    }
-  }
-    
-    dependencies {
-    
-  }
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password:  ${PG_ADMIN}
+    url: jdbc:postgresql://localhost:5432/hrmanagement
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
